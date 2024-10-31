@@ -15,3 +15,5 @@
 ## CREATe your array of objects
 
 ## design a card
+
+#### four filters -- galaxies, stars,
