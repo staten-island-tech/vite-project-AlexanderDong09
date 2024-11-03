@@ -7,7 +7,7 @@ const astronomyObjects = [
     altText: "",
     discoveryYear: 965,
     composition: "Stars, gas, and dust",
-    notableFeatures: "Nearest spiral galaxy to the Milky Way",
+    notableFeatures: "the nearest spiral galaxy to the Milky Way",
   },
   {
     name: "Betelgeuse",
@@ -17,7 +17,7 @@ const astronomyObjects = [
     altText: "",
     discoveryYear: Ancient,
     composition: "Red supergiant",
-    notableFeatures: "One of the largest stars known",
+    notableFeatures: "one of the largest stars known",
   },
   {
     name: "Sagittarius A*",

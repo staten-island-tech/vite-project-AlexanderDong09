@@ -1,1 +1,50 @@
-@import "variable.css"
+@import "./variable.css";
+
+body{
+    background-image: var(--primary-background);
+    background-size: cover;
+  }
+  
+h1{
+    font-size: var(--h1);
+}
+  
+h1,h2,h3,h4,h5{
+    text-align: center;
+}
+  
+.gallery-title{
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Oswald", sans-serif;
+    color: var(--white);
+    text-decoration: underline;
+    margin: 5rem;
+    border: solid;
+    border-color: black;
+    border-radius: 50px;
+    background: radial-gradient(circle, rgba(42,24,166,0.3) 0%, rgba(68,4,94,1) 100%); 
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    width: 20%;
+    border: solid;
+    border-radius: 50px;
+    margin: 4rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out; 
+    background: radial-gradient(circle, rgba(109,94,209,0.35) 0%, rgba(35,42,83,1) 100%);
+    color: white;
+    box-shadow: 2px 3px 6px white;
+}

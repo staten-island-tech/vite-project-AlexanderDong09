@@ -10,6 +10,7 @@ html, body, *{
   --dark-blue: #135cc5;
   --light-red: #f87171;
   --dark-red: #dc2626;
+  --white: #ffffff;
   
   --h1: 	2.986rem; 	
   --h2: 	2.488rem;	
@@ -19,19 +20,5 @@ html, body, *{
 
   --primary-background: url("bg.jpg")
 }
-.warm {
-
-}
 
 
-body{
-  background-image: var(--primary-background);
-}
-
-h1{
-  font-size: var(--h1);
-}
-
-h1,h2,h3,h4,h5{
-  text-align: center;
-}
