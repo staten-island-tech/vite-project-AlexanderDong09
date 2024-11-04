@@ -3,21 +3,21 @@ const astronomyObjects = [
     name: "Andromeda Galaxy",
     distanceLightYears: 2.537,
     type: "Galaxy",
-    imageURL: "",
+    imageURL: "/andromeda.jpg",
     altText: "",
-    discoveryYear: 965,
-    composition: "Stars, gas, and dust",
+    discoveryYear: 964,
     notableFeatures: "the nearest spiral galaxy to the Milky Way",
   },
   {
-    name: "Betelgeuse",
-    distanceLightYears: 642.5,
-    type: "Star",
-    imageURL: "",
-    altText: "",
-    discoveryYear: Ancient,
-    composition: "Red supergiant",
-    notableFeatures: "one of the largest stars known",
+    name: "ESO 137-001",
+    distanceLightYears: 220000000,
+    type: "Galaxy",
+    imageURL: "/jelly.jpg",
+    altText:
+      "Hubble Space Telescope of ESO 137-001, also known as the Jellyfish Galaxy",
+    discoveryYear: 2005,
+    notableFeatures:
+      "One of the most famous jellyfish galaxies (also known as *the* jellyfish galaxy, according to it's wikipedia article). As this galaxy moves to the center of the cluster Abell 3627, it gets stripped away by hot gas, thus creating a 260,000 light-year long tail",
   },
   {
     name: "Sagittarius A*",
@@ -26,8 +26,6 @@ const astronomyObjects = [
     imageURL: "",
     altText: "",
     discoveryYear: 1974,
-    composition:
-      "Incomprehensably condensed matter into a single point in space",
     notableFeatures: "Was the first black hole to ever be photographed",
   },
   {
@@ -37,7 +35,6 @@ const astronomyObjects = [
     imageURL: "",
     altText: "",
     discoveryYear: 1758,
-    composition: "Gas and dust from a supernova",
     notableFeatures: "Contains a pulsar at its center",
   },
   {
@@ -46,8 +43,7 @@ const astronomyObjects = [
     type: "Star",
     imageURL: "",
     altText: "",
-    discoveryYear: Ancient,
-    composition: "Binary star system (Sirius A and B)",
+    discoveryYear: 1844,
     notableFeatures: "Brightest star in the night sky",
   },
   {
@@ -57,7 +53,6 @@ const astronomyObjects = [
     imageURL: "",
     altText: "",
     discoveryYear: 1995,
-    composition: "Gas and dust",
     notableFeatures: "Famous Hubble image",
   },
   {
@@ -66,8 +61,7 @@ const astronomyObjects = [
     type: "Star",
     imageURL: "",
     altText: "",
-    discoveryYear: Ancient,
-    composition: "Main sequence star",
+    discoveryYear: 1850,
     notableFeatures: "fifth brightest in the night sky",
   },
   {
@@ -77,7 +71,6 @@ const astronomyObjects = [
     imageURL: "",
     altText: "",
     discoveryYear: 1781,
-    composition: "Stars, gas, and supermassive black hole",
     notableFeatures:
       "Home to the first black hole imaged by the Event Horizon Telescope",
   },
@@ -88,7 +81,6 @@ const astronomyObjects = [
     imageURL: "",
     altText: "",
     discoveryYear: 1779,
-    composition: "Stars and dark matter",
     notableFeatures: "Distinct dark band of dust",
   },
   {
@@ -98,7 +90,6 @@ const astronomyObjects = [
     imageURL: "",
     altText: "",
     discoveryYear: 1610,
-    composition: "Gas and dust, young stars",
     notableFeatures: "One of the brightest nebulae",
   },
   {
@@ -108,7 +99,6 @@ const astronomyObjects = [
     imageURL: "",
     altText: "",
     discoveryYear: 1915,
-    composition: "Red dwarf",
     notableFeatures: "Closest known star to the Sun",
   },
   {
@@ -118,7 +108,6 @@ const astronomyObjects = [
     imageURL: "",
     altText: "",
     discoveryYear: 1773,
-    composition: "Stars, gas, and dust",
     notableFeatures: "Classic spiral structure",
   },
   {
@@ -128,18 +117,18 @@ const astronomyObjects = [
     imageURL: "",
     altText: "",
     discoveryYear: 1779,
-    composition: "Ionized gas",
     notableFeatures: "Well-known planetary nebula",
   },
   {
-    name: "Alpha Centauri",
-    distanceLightYears: 4.37,
-    type: "Star System",
-    imageURL: "",
-    altText: "",
-    discoveryYear: Ancient,
-    composition: "Triple star system",
-    notableFeatures: "Closest star system to Earth",
+    name: "W2246-0526",
+    distanceLightYears: 12.4,
+    type: "Galaxy",
+    imageURL: "/WISE.jpg",
+    altText:
+      "Artist's impression of the extremely luminous infrared galaxy W2246-0526",
+    discoveryYear: 1689,
+    notableFeatures:
+      "the most luminous known galaxy in the observable universe, 350 trillion times brighter than the sun (it's also cannibalistic! likely the reason why it's so bright)",
   },
   {
     name: "Horsehead Nebula",
@@ -148,7 +137,6 @@ const astronomyObjects = [
     imageURL: "",
     altText: "",
     discoveryYear: 1888,
-    composition: "Dark nebula",
     notableFeatures: "Iconic shape resembling a horse's head",
   },
   {
@@ -158,7 +146,6 @@ const astronomyObjects = [
     imageURL: "",
     altText: "",
     discoveryYear: 1519,
-    composition: "Stars, gas, and dust",
     notableFeatures: "Irregular dwarf galaxy",
   },
   {
@@ -168,18 +155,16 @@ const astronomyObjects = [
     imageURL: "",
     altText: "",
     discoveryYear: 1835,
-    composition: "Massive star formation region",
     notableFeatures: "Contains the most massive known star",
   },
   {
-    name: "Kepler-186f",
-    distanceLightYears: 500,
-    type: "Exoplanet",
+    name: "Helix Nebula",
+    distanceLightYears: 650,
+    type: "Nebula",
     imageURL: "",
     altText: "",
-    discoveryYear: 2014,
-    composition: "Rocky",
-    notableFeatures: "First Earth-sized exoplanet in habitable zone",
+    discoveryYear: 1824,
+    notableFeatures: "Appears as a giant eye in space",
   },
 ];
 

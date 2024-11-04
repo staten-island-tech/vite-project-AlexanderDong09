@@ -1,16 +1,17 @@
 import "../CSS/style.css";
-import "./DOM.js";
+import { DOMSelectors } from "./DOM.js";
 import { astronomyObjects } from "./objects.js";
 
 astronomyObjects.forEach((object) => {
   const card = `
     <div class="card">
-        <h2 class="header">${object.name}</h2>
-        <img src="${object.imageUrl}" alt="${object.altText}">
-        <h3>Type of Object: ${object.type}</h3>
-        <p>Discovery Year of Object: ${object.discoveryYear}</p>
-        <p>Object Composition: ${object.composition}</p>
-        <p>Fun Fact!: ${object.name} is ${object.notableFeatures}</p>
+        <h3 class="header">${object.name}</h3>
+        <img src="${object.imageURL}" alt="${object.altText}">
+        <h4>Type of Object: ${object.type}</h4>
+        <h5>Distance to Earth (in light-years): ${object.distanceLightYears}</h5>
+        <h6>Discovery Year of Object: ${object.discoveryYear}</h6>
+        <h6>Fun Fact!: ${object.name} is ${object.notableFeatures}</h6>
+    </div>
   `;
 
   DOMSelectors.container.insertAdjacentHTML("beforeend", card);

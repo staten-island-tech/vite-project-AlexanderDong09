@@ -4,3 +4,5 @@ const DOMSelectors = {
   text: document.getElementById("value"),
   image: document.getElementById("img"),
 };
+
+export { DOMSelectors };

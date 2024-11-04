@@ -3,6 +3,9 @@
 body{
     background-image: var(--primary-background);
     background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    
   }
   
 h1{
@@ -15,9 +18,9 @@ h1,h2,h3,h4,h5{
   
 .gallery-title{
     text-align: center;
-    font-size: 4rem;
+    font-size: var(--h1);
     font-family: "Oswald", sans-serif;
-    color: var(--white);
+    color: #aae1f2;
     text-decoration: underline;
     margin: 5rem;
     border: solid;
@@ -26,7 +29,7 @@ h1,h2,h3,h4,h5{
     background: radial-gradient(circle, rgba(42,24,166,0.3) 0%, rgba(68,4,94,1) 100%); 
 }
 
-.gallery{
+.container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -35,7 +38,7 @@ h1,h2,h3,h4,h5{
 .card{
     width: 20%;
     border: solid;
-    border-radius: 50px;
+    border-radius: 30px;
     margin: 4rem;
     padding: 2rem;
     display: flex;
@@ -48,3 +51,60 @@ h1,h2,h3,h4,h5{
     color: white;
     box-shadow: 2px 3px 6px white;
 }
+
+
+img{
+    max-width: 100%;
+    transition: all 0.3s ease-in-out; 
+    border-radius: 10px;
+    object-fit: contain;
+    margin: 10px;
+}
+
+.header{
+    text-decoration: underline;
+    font-size: var(--h2);
+}
+
+h3,h4,h5,h6{
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+h3{
+    font-size: var(--h3);
+}
+
+h4{
+    font-size: var(--h4);
+}
+
+h5{
+    font-size: var(--h5);
+}
+
+h6{
+    font-size: var(--h6);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6.75rem;
+    width: 100%;
+    
+  }
+
+.btn {
+    background: var(--white);
+    
+    padding: 1.2rem 2.4rem;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0rem 0.4rem 0.8rem var(--black);
+  }
