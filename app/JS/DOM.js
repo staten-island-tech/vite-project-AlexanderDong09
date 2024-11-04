@@ -1,8 +1,11 @@
 const DOMSelectors = {
   cardHeader: document.querySelector(".header"),
   container: document.querySelector(".container"),
-  text: document.getElementById("value"),
-  image: document.getElementById("img"),
+  allButton: document.querySelector(".btn"),
+  galaxyButton: document.querySelector(".btn-gal"),
+  nebulaButton: document.querySelector(".btn"),
+  starsButton: document.querySelector(".btn"),
+  othersButton: document.querySelector(".btn"),
 };
 
 export { DOMSelectors };

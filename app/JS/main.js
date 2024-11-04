@@ -16,3 +16,49 @@ astronomyObjects.forEach((object) => {
 
   DOMSelectors.container.insertAdjacentHTML("beforeend", card);
 });
+
+DOMSelectors.allButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  const clear = ``;
+
+  DOMSelectors.container.innerHTML = clear;
+
+  astronomyObjects.forEach((object) => {
+    const card = `
+      <div class="card">
+          <h3 class="header">${object.name}</h3>
+          <img src="${object.imageURL}" alt="${object.altText}">
+          <h4>Type of Object: ${object.type}</h4>
+          <h5>Distance to Earth (in light-years): ${object.distanceLightYears}</h5>
+          <h6>Discovery Year of Object: ${object.discoveryYear}</h6>
+          <h6>Fun Fact!: ${object.name} is ${object.notableFeatures}</h6>
+      </div>
+    `;
+
+    DOMSelectors.container.insertAdjacentHTML("beforeend", card);
+  });
+});
+
+DOMSelectors.galaxyButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  const clear = ``;
+
+  DOMSelectors.container.innerHTML = clear;
+
+  astronomyObjects
+    .filter((object) => object.type == "Galaxy")
+    .forEach((object) => {
+      const card = `
+      <div class="card">
+          <h3 class="header">${object.name}</h3>
+          <img src="${object.imageURL}" alt="${object.altText}">
+          <h4>Type of Object: ${object.type}</h4>
+          <h5>Distance to Earth (in light-years): ${object.distanceLightYears}</h5>
+          <h6>Discovery Year of Object: ${object.discoveryYear}</h6>
+          <h6>Fun Fact!: ${object.name} is ${object.notableFeatures}</h6>
+      </div>
+    `;
+
+      DOMSelectors.container.insertAdjacentHTML("beforeend", card);
+    });
+});
