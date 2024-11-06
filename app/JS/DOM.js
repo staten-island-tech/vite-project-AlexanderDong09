@@ -5,7 +5,7 @@ const DOMSelectors = {
   galaxyButton: document.querySelector(".gal"),
   nebulaButton: document.querySelector(".neb"),
   starsButton: document.querySelector(".star"),
-  blackHoleButton: document.querySelector(".bh"),
+  othersButton: document.querySelector(".other"),
 };
 
 export { DOMSelectors };

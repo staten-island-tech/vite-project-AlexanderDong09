@@ -59,6 +59,17 @@ const astronomyObjects = [
     notableFeatures: "Brightest star in the night sky",
   },
   {
+    name: "Boötes Void",
+    distanceLightYears: 700000000,
+    type: "Void",
+    imageURL: "/notquitethevoid.jpg",
+    altText:
+      "An image of Barnard 68, a dark nebula mistakenly used to refer to the Boötes Void. BUT it looks cool so who cares?",
+    discoveryYear: 1981,
+    notableFeatures:
+      "Colloquially referred to as the Great Nothing, a somewhat spherical region of space found in the vicinity of the constellation Boötes, containing only 60 galaxies instead of the 2,000 that should be expected from an area this large. With a radius of nearly 330 million light years accross, it is one of the largest voids in the visible universe, and is referred to as a supervoid.",
+  },
+  {
     name: "Ring Nebula (M57)",
     distanceLightYears: 2300,
     type: "Nebula",
