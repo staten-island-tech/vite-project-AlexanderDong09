@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5{
     font-family: "Oswald", sans-serif;
     color: #aae1f2;
     text-decoration: underline;
-    margin: 5rem;
+    margin-top: 5rem;
     border: solid;
     border-color: black;
     border-radius: 50px;
@@ -87,7 +87,7 @@ h6{
     font-size: var(--h6);
 }
 
-.buttons {
+.type-buttons {
     display: flex;
     justify-content: space-around;
     align-items: center;

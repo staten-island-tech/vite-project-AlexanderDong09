@@ -9,7 +9,7 @@ function baseInsertion() {
           <h3 class="header">${object.name}</h3>
           <img src="${object.imageURL}" alt="${object.altText}">
           <h4>Type of Object: ${object.type}</h4>
-          <h5>Distance to Earth (in light-years): ${object.distanceLightYears}</h5>
+          <h5>Distance to Earth (in light-years): ${object.distanceLightYears.toLocaleString()}</h5>
           <h6>Discovery Year of Object: ${object.discoveryYear}</h6>
           <h6>Fun Fact!: ${object.name} is ${object.notableFeatures}</h6>
       </div>
@@ -18,17 +18,6 @@ function baseInsertion() {
     DOMSelectors.container.insertAdjacentHTML("beforeend", card);
   });
 }
-
-baseInsertion();
-
-DOMSelectors.allButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  const clear = ``;
-
-  DOMSelectors.container.innerHTML = clear;
-
-  baseInsertion();
-});
 
 function filteredInsertion(type) {
   astronomyObjects
@@ -39,7 +28,7 @@ function filteredInsertion(type) {
           <h3 class="header">${object.name}</h3>
           <img src="${object.imageURL}" alt="${object.altText}">
           <h4>Type of Object: ${object.type}</h4>
-          <h5>Distance to Earth (in light-years): ${object.distanceLightYears}</h5>
+          <h5>Distance to Earth (in light-years): ${object.distanceLightYears.toLocaleString()}</h5>
           <h6>Discovery Year of Object: ${object.discoveryYear}</h6>
           <h6>Fun Fact!: ${object.name} is ${object.notableFeatures}</h6>
       </div>
@@ -49,7 +38,7 @@ function filteredInsertion(type) {
     });
 }
 
-function inclusiveInsertion(type) {
+function inclusiveInsertion() {
   const excluded = ["Galaxy", "Nebula", "Star"];
   astronomyObjects
     .filter((object) => !excluded.includes(object.type))
@@ -59,7 +48,7 @@ function inclusiveInsertion(type) {
           <h3 class="header">${object.name}</h3>
           <img src="${object.imageURL}" alt="${object.altText}">
           <h4>Type of Object: ${object.type}</h4>
-          <h5>Distance to Earth (in light-years): ${object.distanceLightYears}</h5>
+          <h5>Distance to Earth (in light-years): ${object.distanceLightYears.toLocaleString()}</h5>
           <h6>Discovery Year of Object: ${object.discoveryYear}</h6>
           <h6>Fun Fact!: ${object.name} is ${object.notableFeatures}</h6>
       </div>
@@ -69,34 +58,35 @@ function inclusiveInsertion(type) {
     });
 }
 
-DOMSelectors.galaxyButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  const clear = ``;
-  DOMSelectors.container.innerHTML = clear;
+/*co d e */
+baseInsertion();
+
+DOMSelectors.allButton.addEventListener("click", function () {
+  DOMSelectors.container.innerHTML = "";
+
+  baseInsertion();
+});
+
+DOMSelectors.galaxyButton.addEventListener("click", function () {
+  DOMSelectors.container.innerHTML = "";
 
   filteredInsertion("Galaxy");
 });
 
-DOMSelectors.nebulaButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  const clear = ``;
-  DOMSelectors.container.innerHTML = clear;
+DOMSelectors.nebulaButton.addEventListener("click", function () {
+  DOMSelectors.container.innerHTML = "";
 
   filteredInsertion("Nebula");
 });
 
-DOMSelectors.starsButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  const clear = ``;
-  DOMSelectors.container.innerHTML = clear;
+DOMSelectors.starsButton.addEventListener("click", function () {
+  DOMSelectors.container.innerHTML = "";
 
   filteredInsertion("Star");
 });
 
-DOMSelectors.othersButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  const clear = ``;
-  DOMSelectors.container.innerHTML = clear;
+DOMSelectors.othersButton.addEventListener("click", function () {
+  DOMSelectors.container.innerHTML = "";
 
   inclusiveInsertion();
 });

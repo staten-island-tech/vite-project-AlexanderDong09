@@ -30,7 +30,7 @@ const astronomyObjects = [
   },
   {
     name: "NGC 4261",
-    distanceLightYears: 100000000,
+    distanceLightYears: 180000000,
     type: "Black Hole",
     imageURL: "",
     altText: "",
@@ -70,12 +70,13 @@ const astronomyObjects = [
       "Colloquially referred to as the Great Nothing, a somewhat spherical region of space found in the vicinity of the constellation Boötes, containing only 60 galaxies instead of the 2,000 that should be expected from an area this large. With a radius of nearly 330 million light years accross, it is one of the largest voids in the visible universe, and is referred to as a supervoid.",
   },
   {
-    name: "Ring Nebula (M57)",
-    distanceLightYears: 2300,
+    name: "Veil Nebula",
+    distanceLightYears: 1470,
     type: "Nebula",
-    imageURL: "",
-    altText: "",
-    discoveryYear: 1779,
+    imageURL: "/veil.jpg",
+    altText:
+      "NASA's mosaic of six Hubble pictures of a small area of the Veil Nebula roughly two light-years across, covering only a tiny fraction of the nebula's vast structure.",
+    discoveryYear: 1784,
     notableFeatures: "Well-known planetary nebula",
   },
   {
