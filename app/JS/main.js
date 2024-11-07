@@ -50,13 +50,11 @@ function filteredInsertion(type) {
 }
 
 function inclusiveInsertion(type) {
-  const what =
-    astronomyObjects
-      .filter((object) => object.type == type)
-      .includes("Black Hole") || "Void";
-
-  what.forEach((object) => {
-    const card = `
+  const excluded = ["Galaxy", "Nebula", "Star"];
+  astronomyObjects
+    .filter((object) => !excluded.includes(object.type))
+    .forEach((object) => {
+      const card = `
       <div class="card">
           <h3 class="header">${object.name}</h3>
           <img src="${object.imageURL}" alt="${object.altText}">
@@ -67,8 +65,8 @@ function inclusiveInsertion(type) {
       </div>
     `;
 
-    DOMSelectors.container.insertAdjacentHTML("beforeend", card);
-  });
+      DOMSelectors.container.insertAdjacentHTML("beforeend", card);
+    });
 }
 
 DOMSelectors.galaxyButton.addEventListener("click", function (event) {
@@ -96,10 +94,9 @@ DOMSelectors.starsButton.addEventListener("click", function (event) {
 });
 
 DOMSelectors.othersButton.addEventListener("click", function (event) {
-  console.log("hi");
   event.preventDefault();
   const clear = ``;
   DOMSelectors.container.innerHTML = clear;
 
-  inclusiveInsertion("Black Hole", "Void");
+  inclusiveInsertion();
 });
