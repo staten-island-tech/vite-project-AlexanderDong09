@@ -19,9 +19,9 @@ function baseInsertion() {
   });
 }
 
-function filteredInsertion(type) {
+function filteredInsertion(ObjectType) {
   astronomyObjects
-    .filter((object) => object.type == type)
+    .filter((object) => object.type == ObjectType)
     .forEach((object) => {
       const card = `
       <div class="card">
@@ -59,7 +59,7 @@ function inclusiveInsertion() {
 }
 
 /*co d e */
-baseInsertion();
+baseInsertion(); // puts in all the cards as soon as you load the website
 
 DOMSelectors.allButton.addEventListener("click", function () {
   DOMSelectors.container.innerHTML = "";
