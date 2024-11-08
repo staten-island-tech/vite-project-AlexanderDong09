@@ -134,14 +134,14 @@ const astronomyObjects = [
     notableFeatures: "Classic spiral structure",
   },
   {
-    name: "NGC 3393",
-    distanceLightYears: 100000000,
-    type: "Black Hole",
-    imageURL: "",
-    altText: "",
-    discoveryYear: 2012,
+    name: "ULAS J1120+0641",
+    distanceLightYears: 28850000000,
+    type: "Quasar",
+    imageURL: "/ULAS.jpg",
+    altText: "Artist's rendering of ULAS J1120+0641.",
+    discoveryYear: 2011,
     notableFeatures:
-      "Two black holes at its center, one about 30 million times the mass of the sun and another at least 1 million times the mass of the sun",
+      "Was the most distant known quasar when discovered in 2011, powered by a supermassive black hole with a mass two billion times that of the Sun",
   },
   {
     name: "Crab Nebula",
