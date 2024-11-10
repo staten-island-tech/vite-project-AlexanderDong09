@@ -1,12 +1,14 @@
 const astronomyObjects = [
   {
-    name: "Proxima Centauri",
-    distanceLightYears: 4.24,
+    name: "WR 124",
+    distanceLightYears: 15000,
     type: "Star",
-    imageURL: "",
-    altText: "",
-    discoveryYear: 1915,
-    notableFeatures: "Closest known star to the Sun",
+    imageURL: "/WR124.jpg",
+    altText:
+      "The luminous, hot star Wolf-Rayet 124 (WR 124) is prominent at the centre of the NASA/ESA/CSA James Webb Space Telescope's composite image combining near-infrared and mid-infrared wavelengths of light, with background stars and galaxies populating the field of view and peeking through the nebula of gas and dust that has been ejected from the ageing massive star",
+    discoveryYear: 1938,
+    notableFeatures:
+      "An highly luminous Wolf-Rayet star surrounded by an intensely hot nebula formed from the star's extreme stellar wind, characteristic of all Wolf Rayet Stars. Also one of the fastest runaway stars in the Milky Way with a radial velocity around 200 km/s.",
   },
   {
     name: "ESO 137-001",
@@ -19,14 +21,16 @@ const astronomyObjects = [
     notableFeatures:
       "One of the most famous jellyfish galaxies (also known as *the* jellyfish galaxy, according to it's wikipedia article). As this galaxy moves to the center of the cluster Abell 3627, it gets stripped away by hot gas, thus creating a 260,000 light-year long tail",
   },
+
   {
-    name: "Horsehead Nebula",
-    distanceLightYears: 1500,
+    name: "Veil Nebula",
+    distanceLightYears: 1470,
     type: "Nebula",
-    imageURL: "",
-    altText: "",
-    discoveryYear: 1888,
-    notableFeatures: "Iconic shape resembling a horse's head",
+    imageURL: "/veil.jpg",
+    altText:
+      "NASA's mosaic of six Hubble pictures of a small area of the Veil Nebula roughly two light-years across, covering only a tiny fraction of the nebula's vast structure.",
+    discoveryYear: 1784,
+    notableFeatures: "Well-known planetary nebula",
   },
   {
     name: "NGC 4261",
@@ -70,14 +74,13 @@ const astronomyObjects = [
       "Colloquially referred to as the Great Nothing, a somewhat spherical region of space found in the vicinity of the constellation Boötes, containing only 60 galaxies instead of the 2,000 that should be expected from an area this large. With a radius of nearly 330 million light years accross, it is one of the largest voids in the visible universe, and is referred to as a supervoid.",
   },
   {
-    name: "Veil Nebula",
-    distanceLightYears: 1470,
+    name: "Horsehead Nebula",
+    distanceLightYears: 1500,
     type: "Nebula",
-    imageURL: "/veil.jpg",
-    altText:
-      "NASA's mosaic of six Hubble pictures of a small area of the Veil Nebula roughly two light-years across, covering only a tiny fraction of the nebula's vast structure.",
-    discoveryYear: 1784,
-    notableFeatures: "Well-known planetary nebula",
+    imageURL: "",
+    altText: "",
+    discoveryYear: 1888,
+    notableFeatures: "Iconic shape resembling a horse's head",
   },
   {
     name: "Black Eye Galaxy (M64)",
@@ -89,13 +92,24 @@ const astronomyObjects = [
     notableFeatures: "Distinct dark band of dust",
   },
   {
+    name: "Proxima Centauri",
+    distanceLightYears: 4.24,
+    type: "Star",
+    imageURL: "",
+    altText: "",
+    discoveryYear: 1915,
+    notableFeatures: "Closest known star to the Sun",
+  },
+  {
     name: "Andromeda Galaxy",
-    distanceLightYears: 2.537,
+    distanceLightYears: 2537000,
     type: "Galaxy",
     imageURL: "/andromeda.jpg",
-    altText: "",
+    altText:
+      "An image of the Andromeda Galaxy, the closest galaxy to our home galaxy, the Milky Way at  2.53 million light years away.",
     discoveryYear: 964,
-    notableFeatures: "the nearest spiral galaxy to the Milky Way",
+    notableFeatures:
+      "Andromeda is the nearest galaxy to our own Milky Way galaxy, and is the most distant thing we humans can see with the unaided eye. Predicted to collide with our galaxy in in approximately 4.5 billion years, with the galaxy product being named Milkdromeda.",
   },
   {
     name: "Tarantula Nebula",
@@ -170,6 +184,17 @@ const astronomyObjects = [
     altText: "",
     discoveryYear: 1995,
     notableFeatures: "Famous Hubble image",
+  },
+  {
+    name: "MY Camelopardalis",
+    distanceLightYears: 13050,
+    type: "Star",
+    imageURL: "/MY.jpg",
+    altText:
+      "MY Camelopardalis is two supermassive blue O-type stars orbiting each other so closely they have become what's known as a contact binary",
+    discoveryYear: 2004,
+    notableFeatures:
+      "MY Camelopardalis is one of the most massive known binary star systems known, consisting of two hot blue O-type stars orbiting each other at over a million kilometers per hour. This star system is a leading candidate for a massive star merger (where the two stars may converge and create one giant star over 60 solar masses in size",
   },
   {
     name: "Helix Nebula",

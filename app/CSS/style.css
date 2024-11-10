@@ -93,8 +93,22 @@ h6{
     align-items: center;
     height: 6.75rem;
     width: 100%;
-    
+    border: solid;
+    border-radius: 50px;
+    border-color: rgba(109,94,209,0.35);
+    margin: 2rem 0rem 2rem 0rem;
   }
+
+.sort-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6.75rem;
+    width: 100%;
+    border: solid;
+    border-radius: 50px;
+    border-color: rgba(35,42,83,1);
+}  
 
 .btn {
     background: var(--white);
@@ -115,7 +129,6 @@ h6{
     border-radius: 0.8rem;
     font-size: 1rem;
     font-weight: 600;
-    cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0rem 0.4rem 0.8rem var(--black);    
 }
