@@ -8,18 +8,15 @@ body{
     
   }
   
-h1{
-    font-size: var(--h1);
-}
-  
+
 h1,h2,h3,h4,h5{
     text-align: center;
+    font-family: "Ruluko";
 }
   
 .gallery-title{
     text-align: center;
     font-size: var(--h1);
-    font-family: "Oswald", sans-serif;
     color: #aae1f2;
     text-decoration: underline;
     margin-top: 5rem;
@@ -34,11 +31,15 @@ h1,h2,h3,h4,h5{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.header{
+    color: var(--lightblue);
+}
 
 .card{
-    width: 20%;
+    width: 25%;
     border: solid;
     border-radius: 30px;
+    border-color: var(--lightblue);
     margin: 4rem;
     padding: 2rem;
     display: flex;
@@ -48,10 +49,9 @@ h1,h2,h3,h4,h5{
     align-items: center;
     transition: all 0.3s ease-in-out; 
     background: radial-gradient(circle, rgba(109,94,209,0.35) 0%, rgba(35,42,83,1) 100%);
-    color: white;
-    box-shadow: 2px 3px 6px white;
+    color: var(--cream);
+    box-shadow: 2px 3px 6px, var(--cream);
 }
-
 
 img{
     max-width: 100%;
@@ -69,6 +69,7 @@ img{
 h3,h4,h5,h6{
     padding-bottom: 5px;
     text-align: center;
+    font-family: "Ruluko";
 }
 
 h3{
@@ -97,6 +98,7 @@ h6{
     border-radius: 50px;
     border-color: rgba(109,94,209,0.35);
     margin: 2rem 0rem 2rem 0rem;
+    font-size: var(--h3);
   }
 
 .sort-buttons {
@@ -111,24 +113,31 @@ h6{
 }  
 
 .btn {
-    background: var(--white);
     padding: 1.2rem 2.4rem;
     border: none;
     border-radius: 0.8rem;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: var(--h5);
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0rem 0.4rem 0.8rem var(--black);
+    background-color: var(--lightblue);
+    color: var(--cream);
   }
 
 .dropdown{
-    background: var(--white);
     padding: 1.2rem 2.4rem;
     border: none;
     border-radius: 0.8rem;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: var(--h4);
+    font-family: "Ruluko";
     transition: all 0.3s ease;
-    box-shadow: 0rem 0.4rem 0.8rem var(--black);    
+    box-shadow: 0rem 0.4rem 0.8rem var(--black); 
+    background-color: var(--lightblue);
+    color: var(--cream);   
+}
+
+.label{
+    font-family: "Ruluko";
+    font-size: var(--h4);
+    color: var(--cream);  
 }

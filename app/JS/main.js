@@ -11,11 +11,11 @@ function baseInsertion() {
   astronomyObjects.forEach((object) => {
     const card = `
       <div class="card">
-          <h3 class="header">${object.name}</h3>
+          <h2 class="header">${object.name}</h2>
           <img src="${object.imageURL}" alt="${object.altText}">
-          <h4>Type of Object: ${object.type}</h4>
+          <h3>Type of Object: ${object.type}</h3>
           <h5>Distance to Earth (in light-years): ${object.distanceLightYears.toLocaleString()}</h5>
-          <h6>Discovery Year of Object: ${object.discoveryYear}</h6>
+          <h5>Discovery Year of Object: ${object.discoveryYear}</h5>
           <h6>${object.notableFeatures}</h6>
       </div>
     `;
@@ -32,11 +32,11 @@ function filteredInsertion(ObjectType) {
     .forEach((object) => {
       const card = `
       <div class="card">
-          <h3 class="header">${object.name}</h3>
+          <h2 class="header">${object.name}</h2>
           <img src="${object.imageURL}" alt="${object.altText}">
-          <h4>Type of Object: ${object.type}</h4>
-          <h5>Distance to Earth (in light-years): ${object.distanceLightYears.toLocaleString()}</h5>
-          <h6>Discovery Year of Object: ${object.discoveryYear}</h6>
+          <h3>Type of Object: ${object.type}</h3>
+          <h4>Distance to Earth (in light-years): ${object.distanceLightYears.toLocaleString()}</h4>
+          <h5>Discovery Year of Object: ${object.discoveryYear}</h5>
           <h6>${object.notableFeatures}</h6>
       </div>
     `;
@@ -50,15 +50,15 @@ function inclusiveInsertion() {
 
   const excluded = ["Galaxy", "Nebula", "Star"];
   astronomyObjects
-    .filter((object) => !excluded.includes(object.type)) // if it DOESNT include the object types defined before, then it inserts them 
+    .filter((object) => !excluded.includes(object.type)) // if it DOESNT include the object types defined before, then it inserts them
     .forEach((object) => {
       const card = `
       <div class="card">
-          <h3 class="header">${object.name}</h3>
+          <h2 class="header">${object.name}</h2>
           <img src="${object.imageURL}" alt="${object.altText}">
-          <h4>Type of Object: ${object.type}</h4>
-          <h5>Distance to Earth (in light-years): ${object.distanceLightYears.toLocaleString()}</h5>
-          <h6>Discovery Year of Object: ${object.discoveryYear}</h6>
+          <h3>Type of Object: ${object.type}</h3>
+          <h4>Distance to Earth (in light-years): ${object.distanceLightYears.toLocaleString()}</h4>
+          <h5>Discovery Year of Object: ${object.discoveryYear}</h5>
           <h6>${object.notableFeatures}</h6>
       </div>
     `;
@@ -96,13 +96,13 @@ function sortObjects(sortOption) {
   sortedData.forEach((object) => {
     const card = `
     <div class="card">
-        <h3 class="header">${object.name}</h3>
-        <img src="${object.imageURL}" alt="${object.altText}">
-        <h4>Type of Object: ${object.type}</h4>
-        <h5>Distance to Earth (in light-years): ${object.distanceLightYears.toLocaleString()}</h5>
-        <h6>Discovery Year of Object: ${object.discoveryYear}</h6>
-        <h6>${object.notableFeatures}</h6>
-    </div>
+          <h2 class="header">${object.name}</h2>
+          <img src="${object.imageURL}" alt="${object.altText}">
+          <h3>Type of Object: ${object.type}</h3>
+          <h4>Distance to Earth (in light-years): ${object.distanceLightYears.toLocaleString()}</h4>
+          <h5>Discovery Year of Object: ${object.discoveryYear}</h5>
+          <h6>${object.notableFeatures}</h6>
+      </div>
   `;
     DOMSelectors.container.insertAdjacentHTML("beforeend", card);
   });
