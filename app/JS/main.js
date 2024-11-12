@@ -50,7 +50,7 @@ function inclusiveInsertion() {
 
   const excluded = ["Galaxy", "Nebula", "Star"];
   astronomyObjects
-    .filter((object) => !excluded.includes(object.type))
+    .filter((object) => !excluded.includes(object.type)) // if it DOESNT include the object types defined before, then it inserts them 
     .forEach((object) => {
       const card = `
       <div class="card">
