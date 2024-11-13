@@ -138,7 +138,16 @@ h6{
   }
 
 #btn-norm{
-    background: var(--primary-gradient)
+    background: var(--primary-gradient);
+    border: solid;
+    border-color: var(--cream);
+    border-width: 2px;
+}
+#btn-dark{
+    background: var(--black);
+    border: solid;
+    border-width: 2px;  
+    border-color: var(--aqua);
 }
 
   
