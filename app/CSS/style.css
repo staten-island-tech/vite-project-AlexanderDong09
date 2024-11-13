@@ -48,7 +48,7 @@ h1,h2,h3,h4,h5{
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease-in-out; 
-    background: radial-gradient(circle, rgba(109,94,209,0.35) 0%, rgba(35,42,83,1) 100%);
+    background: var(--primary-gradient);
     color: var(--cream);
     box-shadow: 2px 3px 6px, var(--cream);
 }
@@ -87,6 +87,19 @@ h5{
 h6{
     font-size: var(--h6);
 }
+.theme-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6.75rem;
+    width: 100%;
+    border: solid;
+    border-radius: 50px;
+    border-color: rgba(109,94,209,0.35);
+    margin: 2rem 0rem 2rem 0rem;
+    font-size: var(--h3);
+  }
+
 
 .type-buttons {
     display: flex;
@@ -124,6 +137,11 @@ h6{
     color: var(--cream);
   }
 
+#btn-norm{
+    background: var(--primary-gradient)
+}
+
+  
 .dropdown{
     padding: 1.2rem 2.4rem;
     border: none;

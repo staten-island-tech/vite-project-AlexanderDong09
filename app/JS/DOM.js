@@ -9,6 +9,7 @@ const DOMSelectors = {
   resetSort: document.querySelector(".reset"),
   sortOptions: document.getElementById("sortOptions"),
   sortButton: document.getElementById("enterButton"),
+  normalTheme: document.querySelector(".norm"),
 };
 
 export { DOMSelectors };

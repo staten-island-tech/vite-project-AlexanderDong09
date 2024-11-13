@@ -10,7 +10,14 @@ html, body, *{
   --white: #ffffff;
   --cream: #fffce9;
   --lightblue: #717fe1;
-  
+  --aqua: #97d6e7;
+  --bluegreen: #1a6970;
+  --black: #020001;
+
+
+  --primary-gradient: radial-gradient(circle, rgba(109,94,209,0.35) 0%, rgba(35,42,83,1) 100%); 
+
+
   
   --h1: 	3.986rem; 	
   --h2: 	2.488rem;	
