@@ -6,16 +6,12 @@ html, body, *{
 }
 
 :root{
-  --purple: #252952;
-  --white: #ffffff;
-  --cream: #fffce9;
+  --purple: radial-gradient(circle, rgba(109,94,209,0.35) 0%, rgba(35,42,83,1) 100%);
   --lightblue: #717fe1;
+  --cream: #fffce9;
   --aqua: #97d6e7;
   --bluegreen: #1a6970;
   --black: #020001;
-
-
-  --primary-gradient: radial-gradient(circle, rgba(109,94,209,0.35) 0%, rgba(35,42,83,1) 100%); 
 
 
   
@@ -30,8 +26,17 @@ html, body, *{
   --primary-background: url("bg.jpg");
 }
 
+.normal{
+  --primary: var(--purple);
+  --secondary: var(--lightblue);
+  --text: var(--cream);
+}
 
-
+.dark{
+  --primary: var(--black);
+  --secondary: var(--bluegreen);
+  --text: var(--aqua);
+}
 
 
 .ruluko-regular {
