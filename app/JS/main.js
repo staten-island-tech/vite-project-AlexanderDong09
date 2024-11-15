@@ -122,7 +122,14 @@ function resetSortedObjects() {
   }
 }
 
-//
+function normalTheme() {
+  document.body.classList.remove("normal");
+  document.body.classList.add("dark");
+}
+function darkTheme() {
+  document.body.classList.remove("dark");
+  document.body.classList.add("normal"); // figure out this button
+}
 
 //
 
@@ -162,4 +169,12 @@ DOMSelectors.resetSort.addEventListener("click", function () {
 DOMSelectors.sortButton.addEventListener("click", function () {
   const option = DOMSelectors.sortOptions.value;
   sortObjects(option);
+});
+
+DOMSelectors.normalTheme.addEventListener("click", function () {
+  normalTheme();
+});
+
+DOMSelectors.darkTheme.addEventListener("click", function () {
+  darkTheme();
 });

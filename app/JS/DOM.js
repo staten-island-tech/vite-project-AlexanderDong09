@@ -9,8 +9,8 @@ const DOMSelectors = {
   resetSort: document.querySelector(".reset"),
   sortOptions: document.getElementById("sortOptions"),
   sortButton: document.getElementById("enterButton"),
-  normalTheme: document.querySelector(".norm"),
-  darkTheme: document.querySelector("dark"),
+  normalTheme: document.querySelector(".normal"),
+  darkTheme: document.querySelector(".dark"),
 };
 
 export { DOMSelectors };
