@@ -1,7 +1,7 @@
 const DOMSelectors = {
   cardHeader: document.querySelector(".header"),
   container: document.querySelector(".container"),
-  allButton: document.querySelector(".btn"),
+  allButton: document.querySelector(".all"),
   galaxyButton: document.querySelector(".gal"),
   nebulaButton: document.querySelector(".neb"),
   starsButton: document.querySelector(".star"),
@@ -9,8 +9,8 @@ const DOMSelectors = {
   resetSort: document.querySelector(".reset"),
   sortOptions: document.getElementById("sortOptions"),
   sortButton: document.getElementById("enterButton"),
-  normalTheme: document.querySelector(".normal"),
-  darkTheme: document.querySelector(".dark"),
+  normalTheme: document.querySelector(".btn-normal"),
+  darkTheme: document.querySelector(".btn-dark"),
 };
 
 export { DOMSelectors };

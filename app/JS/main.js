@@ -14,7 +14,7 @@ function baseInsertion() {
           <h2 class="header">${object.name}</h2>
           <img src="${object.imageURL}" alt="${object.altText}">
           <h3>Type of Object: ${object.type}</h3>
-          <h5>Distance to Earth (in light-years): ${object.distanceLightYears.toLocaleString()}</h5>
+          <h4>Distance to Earth (in light-years): ${object.distanceLightYears.toLocaleString()}</h4>
           <h5>Discovery Year of Object: ${object.discoveryYear}</h5>
           <h6>${object.notableFeatures}</h6>
       </div>
@@ -123,12 +123,12 @@ function resetSortedObjects() {
 }
 
 function normalTheme() {
-  document.body.classList.remove("normal");
-  document.body.classList.add("dark");
+  document.body.classList.remove("dark");
+  document.body.classList.add("normal");
 }
 function darkTheme() {
-  document.body.classList.remove("dark");
-  document.body.classList.add("normal"); // figure out this button
+  document.body.classList.remove("normal");
+  document.body.classList.add("dark");
 }
 
 //
@@ -172,9 +172,11 @@ DOMSelectors.sortButton.addEventListener("click", function () {
 });
 
 DOMSelectors.normalTheme.addEventListener("click", function () {
+  console.log("let there be light tyeshi");
   normalTheme();
 });
 
 DOMSelectors.darkTheme.addEventListener("click", function () {
+  console.log("dark");
   darkTheme();
 });
