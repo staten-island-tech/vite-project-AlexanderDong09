@@ -24,7 +24,7 @@ html, body, *{
   --h6:   1.2rem;
 
 
-  --primary-background: url("bg.jpg");
+  --primary-background: url("/bg.jpg");
 }
 
 .normal{

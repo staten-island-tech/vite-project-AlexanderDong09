@@ -1,5 +1,4 @@
 @import "./variable.css";
-@import url(bg.jpg);
 
 body{
     background-image: var(--primary-background);
