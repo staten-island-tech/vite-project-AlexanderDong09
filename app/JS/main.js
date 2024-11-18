@@ -172,11 +172,9 @@ DOMSelectors.sortButton.addEventListener("click", function () {
 });
 
 DOMSelectors.normalTheme.addEventListener("click", function () {
-  console.log("let there be light tyeshi");
   normalTheme();
 });
 
 DOMSelectors.darkTheme.addEventListener("click", function () {
-  console.log("dark");
   darkTheme();
 });
